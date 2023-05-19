@@ -5,22 +5,18 @@
 for i, v in pairs(getconnections(replicatedStorageService.DefaultChatSystemChatEvents.OnNewMessage.OnClientEvent)) do
     if
         v.Function
-        and #debug.getupvalues(v.Function) > 0
-        and type(debug.getupvalues(v.Function)[1]) == "table"
-        and getmetatable(debug.getupvalues(v.Function)[1])
-        and getmetatable(debug.getupvalues(v.Function)[1]).GetChannel
-    then
-        oldchanneltab = getmetatable(debug.getupvalues(v.Function)[1])
-        oldchannelfunc = getmetatable(debug.getupvalues(v.Function)[1]).GetChannel
+        and #debug.getupvalues(v.Function) > 0 and type(debug.getupvalues(v.Function)[1]) == "table" and getmetatable(debug.getupvalues(v.Function)[1]) and getmetatable(debug.getupvalues(v.Function)[1]).GetChannel then
+        bedwarsStore.oldChatTable = getmetatable(debug.getupvalues(v.Function)[1])
+        bedwarsStore.whitelist.oldChatFunction = getmetatable(debug.getupvalues(v.Function)[1]).GetChannel
         getmetatable(debug.getupvalues(v.Function)[1]).GetChannel = function(Self, Name)
-            local tab = oldchannelfunc(Self, Name)
-            if tab and tab.AddMessageToChannel then
-                local addmessage = tab.AddMessageToChannel
-                if oldchanneltabs[tab] == nil then
-                    oldchanneltabs[tab] = tab.AddMessageToChannel
+                local tab = bedwarsStore.oldChatFunction(Self, Name)
+                if tab and tab.AddMessageToChannel then
+                        local addmessage = tab.AddMessageToChannel
+                        if bedwarsStore.oldChatFunctions[tab] == nil then
+                                bedwarsStore.whitelist.oldChatFunctions[tab] = tab.AddMessageToChannel
                 end
                 tab.AddMessageToChannel = function(Self2, MessageData)
-                    if MessageData.FromSpeaker and Players[MessageData.FromSpeaker] then
+                    if MessageData.FromSpeaker and playersService[MessageData.FromSpeaker] then
                         if ChatTag[Players[MessageData.FromSpeaker].Name] then
                             MessageData.ExtraData = {
                                 NameColor = Players[MessageData.FromSpeaker].Team == nil and Color3.new(196,51,0)
