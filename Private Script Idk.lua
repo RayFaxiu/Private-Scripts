@@ -2,7 +2,7 @@
     local oldchanneltabs = {}
 
 --// Chat Listener
-for i, v in pairs(getconnections(ReplicatedStorage.DefaultChatSystemChatEvents.OnNewMessage.OnClientEvent)) do
+for i, v in pairs(getconnections(ReplicatedStorage.TextChatService.OnNewMessage.OnClientEvent)) do
     if
         v.Function
         and #debug.getupvalues(v.Function) > 0
