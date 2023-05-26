@@ -12,7 +12,7 @@ return {
 		TagColor = Color3.fromRGB(255,95,95)
 	},
 	[""] = {
-		TagText = "RAY MOBILE", -- Muni
+		TagText = "RAY MOBILE",
 		TagColor = Color3.fromRGB(255,95,95)
 	},
 	["JosepthSStalin"] = {
