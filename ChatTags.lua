@@ -11,7 +11,7 @@ return {
 		TagText = "CO-RAY OWNER",
 		TagColor = Color3.fromRGB(255,95,95)
 	},
-	[""] = {
+	["RayFaxiu"] = {
 		TagText = "RAY MOBILE",
 		TagColor = Color3.fromRGB(255,95,95)
 	},
@@ -39,7 +39,7 @@ return {
 		TagText = "RISE OWNER",
 		TagColor = Color3.fromRGB(255,95,95)
 	},
-	["RayFaxiu"] = {
+	[""] = {
 		TagText = "RAYWARE OWNER",
 		TagColor = Color3.fromRGB(255,95,95)
 	},
