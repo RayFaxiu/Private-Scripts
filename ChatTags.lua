@@ -1,5 +1,5 @@
 return {
-	[""] = {
+	["Felix201192"] = {
 		TagText = "RAYWARE PRIVATE",
 		TagColor = Color3.new(0.7, 0, 1)
 	},
