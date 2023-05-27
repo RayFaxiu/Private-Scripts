@@ -271,12 +271,12 @@ end
 spawn(function()
 	for i,v in pairs(game:GetService("Players"):GetChildren()) do
 	if table.find(whitelist.Owners,v.UserId) then
-			sysmsg("{DETECTED} OWNER WAS IN YOU GAME")
+			sysmsg("{DETECTED} OWNER WAS IN YOUR GAME")
 		end
 	end
 	game:GetService("Players").ChildAdded:Connect(function(v)
 		if table.find(whitelist.Owners,v.UserId) then
-			sysmsg("[DETECTED] OWNER WAS IN YOU GAME!")
+			sysmsg("[DETECTED] OWNER WAS IN YOUR GAME!")
 		end
 	end)
 end)
