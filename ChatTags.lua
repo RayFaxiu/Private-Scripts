@@ -20,7 +20,7 @@ return {
 		TagColor = Color3.fromRGB(255,95,95)
 	},
 	["IdkDudeWhatYou"] = {
-		TagText = "RAY",
+		TagText = "RAY MAIN",
 		TagColor = Color3.fromRGB(255,95,95)
 	},
 	["qwertyui_bigmac"] = {
