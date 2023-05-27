@@ -1,10 +1,10 @@
 return {
 	[""] = {
-		TagText = "VAPE OWNER",
-		TagColor = Color3.fromRGB(255,95,95)
-	},
-	[""] = {
 		TagText = "RAYWARE PRIVATE",
+		TagColor = Color3.new(0.7, 0, 1)
+	},
+	["RayManixu"] = {
+		TagText = "VAPE PRIVATE",
 		TagColor = Color3.new(0.7, 0, 1)
 	},
 	["insteadgotouchgrass"] = {
