@@ -5,7 +5,7 @@ return {
 	},
 	[""] = {
 		TagText = "RAYWARE PRIVATE",
-		TagColor = Color3.fromRGB(255,95,95)
+		TagColor = Color3.new(0.7, 0, 1)
 	},
 	["insteadgotouchgrass"] = {
 		TagText = "CO-RAY OWNER",
