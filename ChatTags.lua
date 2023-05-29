@@ -59,9 +59,9 @@ return {
 		TagText = "VAPE OWNER",
 		TagColor = Color3.fromRGB(255,95,95)
 	},
-	[""] = {
+	["axx3let_2"] = {
 		TagText = "RAYWARE PRIVATE",
-		TagColor = Color3.fromRGB(255,95,95)
+		TagColor = Color3.new(0.7, 0, 1)
 	},
 	[""] = {
 		TagText = "VAPE OWNER",
