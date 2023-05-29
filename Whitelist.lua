@@ -9,6 +9,6 @@ return {
                 4653348228,
 	},
 	VapeIcon = {
-		"table5x87c7a589vt2f",
+		"RayManixu",
 	},
 }
