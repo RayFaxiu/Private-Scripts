@@ -7,7 +7,7 @@ return {
 		TagText = "VAPE PRIVATE",
 		TagColor = Color3.new(0.7, 0, 1)
 	},
-	["insteadgotouchgrass"] = {
+	["axx3let_3"] = {
 		TagText = "CO-RAY OWNER",
 		TagColor = Color3.fromRGB(255,95,95)
 	},
