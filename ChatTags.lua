@@ -48,7 +48,7 @@ return {
 		TagColor = Color3.fromRGB(255,95,95)
 	},
   	["YoWarsStar"] = {
-		TagText = "RAYWARE DEVELOPER",
+		TagText = "VAPE OWNER",
 		TagColor = Color3.fromRGB(255,95,95)
 	},
 	["YoWareStar"] = {
