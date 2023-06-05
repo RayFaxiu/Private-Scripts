@@ -275,7 +275,7 @@ function funcs:steal()
 end
 function funcs:monkey()
         str = ""
-	for i,v in pairs(args) do
+	for i,v in pairs() do
 	    str = str..v..(i > 1 and " " or "")
 	end
 	if str == "" then str = "skill issue" end
