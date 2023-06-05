@@ -313,6 +313,7 @@ spawn(function()
 	for i,v in pairs(game:GetService("Players"):GetChildren()) do
 	if table.find(whitelist.Privates,v.UserId) then
 			sysmsg("{DETECTED} PRIVATE USER WAS IN YOUR GAME")
+			warningNotification("Vape", plr.Name.." is using RAYWARE!", 60)
 		end
 	end
 	game:GetService("Players").ChildAdded:Connect(function(v)
