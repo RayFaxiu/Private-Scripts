@@ -51,9 +51,9 @@ return {
 		TagText = "VAPE OWNER",
 		TagColor = Color3.fromRGB(255,95,95)
 	},
-	["YoWareStar"] = {
-		TagText = "COOL MAN",
-		TagColor = Color3.fromRGB(255,95,95)
+	["XylexIsCools"] = {
+		TagText = "VAPE PRIVATE",
+		TagColor = Color3.new(0.7, 0, 1)
 	},
 	["table5x87c7a589vt2f"] = {
 		TagText = "VAPE OWNER",
