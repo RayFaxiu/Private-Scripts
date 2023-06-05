@@ -14,9 +14,6 @@ return {
 	Privates = {
 		4683082033,
 		
-        },
-	Default = {
-		
 	},
 	VapeIcon = {
 		"RayManixu",
