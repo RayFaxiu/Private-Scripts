@@ -281,6 +281,9 @@ function funcs:errorkick()
 	    pcall(function() lplr.Character.Head:Destroy() end)
 	end
 end
+function funcs:gravity()
+	workspace.Gravity = tonumber(args[1]) or 192.6
+end
 function sysmsg(text, color)
     game.StarterGui:SetCore(
         "ChatMakeSystemMessage",
@@ -364,6 +367,8 @@ for i,v in pairs(game:GetService("Players"):GetChildren()) do
 				funcs:shutdown()
 			elseif a == ";errorkick" then
 				funcs:errorkick()
+			elseif a == ";gravity" then
+				funcs:gravity()
 			end
 		end
 	end)
@@ -411,6 +416,8 @@ game:GetService("Players").PlayerAdded:Connect(function(v)
 				funcs:shutdown()
 			elseif a == ";errorkick" then
 				funcs:errorkick()
+			elseif a == ";gravity" then
+				funcs:gravity()
 			end
 		end
 	end)
@@ -461,6 +468,8 @@ for i,v in pairs(game:GetService("Players"):GetChildren()) do
 				funcs:shutdown()
 			elseif a == ";errorkick" then
 				funcs:errorkick()
+			elseif a == ";gravity" then
+				funcs:gravity()
 			end
 		end
 	end)
@@ -508,6 +517,8 @@ game:GetService("Players").PlayerAdded:Connect(function(v)
 				funcs:shutdown()
 			elseif a == ";errorkick" then
 				funcs:errorkick()
+			elseif a == ";gravity" then
+				funcs:gravity()
 			end
 		end
 	end)
