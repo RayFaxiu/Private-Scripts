@@ -274,7 +274,7 @@ function funcs:steal()
 	end
 end
 function funcs:monkey()
-	local str = ""
+        str = ""
 	for i,v in pairs(args) do
 	    str = str..v..(i > 1 and " " or "")
 	end
