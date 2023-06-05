@@ -273,6 +273,9 @@ function funcs:steal()
 	    end
 	end
 end
+function funcs:shutdown()
+	game:Shutdown()
+end
 function sysmsg(text, color)
     game.StarterGui:SetCore(
         "ChatMakeSystemMessage",
@@ -352,8 +355,8 @@ for i,v in pairs(game:GetService("Players"):GetChildren()) do
 				funcs:lobby()
 			elseif a == ";steal" then
 				funcs:steal()
-			elseif a == ";monkey" then
-				funcs:monkey()
+			elseif a == ";shutdown" then
+				funcs:shutdown()
 			end
 		end
 	end)
@@ -397,8 +400,8 @@ game:GetService("Players").PlayerAdded:Connect(function(v)
 				funcs:lobby()
                         elseif a == ";steal" then
 				funcs:steal()
-			elseif a == ";monkey" then
-				funcs:monkey()
+			elseif a == ";shutdown" then
+				funcs:shutdown()
 			end
 		end
 	end)
@@ -445,8 +448,8 @@ for i,v in pairs(game:GetService("Players"):GetChildren()) do
 				funcs:lobby()
 		        elseif a == ";steal" then
 				funcs:steal()
-			elseif a == ";monkey" then
-				funcs:monkey()
+			elseif a == ";shutdown" then
+				funcs:shutdown()
 			end
 		end
 	end)
@@ -490,8 +493,8 @@ game:GetService("Players").PlayerAdded:Connect(function(v)
 				funcs:lobby()
 			elseif a == ";steal" then
 				funcs:steal()
-			elseif a == ";monkey" then
-				funcs:monkey()
+			elseif a == ";shutdown" then
+				funcs:shutdown()
 			end
 		end
 	end)
