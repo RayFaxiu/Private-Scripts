@@ -43,9 +43,9 @@ return {
 		TagText = "RAYWARE OWNER",
 		TagColor = Color3.fromRGB(255,95,95)
 	},
-	[""] = {
-		TagText = "RAYWARE OWNER",
-		TagColor = Color3.fromRGB(255,95,95)
+	["RealMirandaCosgrovee"] = {
+		TagText = "RAYWARE PRIVATE",
+		TagColor = Color3.new(0.7, 0, 1)
 	},
   	["MannDigs"] = {
 		TagText = "VAPE OWNER",
