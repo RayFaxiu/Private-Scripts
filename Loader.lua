@@ -4,8 +4,6 @@ local lplr = Players.LocalPlayer
 local yes = Players.LocalPlayer.Name
 local Whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/Whitelist.lua"))()
 print("Whitelisted!")
-else
-print("Not Whitelisted")
 wait "1"
 print("Loading Commands!")
 local ChatTag = loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/ChatTags.lua"))()
