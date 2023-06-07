@@ -5,6 +5,6 @@ for i,v in pairs(HWIDTable) do
         print("Whitelisted!")
         wait "1"
         print("Loading Commands!")
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/Whitelist2.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/Loader.lua"))()
     end
 end
