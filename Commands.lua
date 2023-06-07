@@ -8,6 +8,7 @@ for i,v in pairs(HWIDTable) do
         print("WHitelisted, Loading Commands!")
     end
 end
+local whitelist2 = loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/Whitelist2.lua"))()
 local whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/Whitelist.lua"))()
 local FunctionsLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/FunctionsHandler.lua"))()
 local entityLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/Libraries/entityHandler.lua"))()
