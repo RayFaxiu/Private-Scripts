@@ -1,5 +1,3 @@
-local whitelisted = {
-  Owners = {
-    "BB034194-4BE5-450E-8F92-EFED1A0C8774"
-    
-},
+return {
+"1b3993fdf21211eb8e3b806e6f6e6963685903ef83f7a7c8a165f77eed160d9e";
+}
