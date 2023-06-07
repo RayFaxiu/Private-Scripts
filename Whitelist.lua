@@ -10,7 +10,15 @@ return {
 		4671510503,
 		4664917357,
                 4667660774,
+		local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/Whitelist2.lua"))()
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
+for i,v in pairs(HWIDTable) do
+    if v == HWID then
+        print("hi")
+    end
+end
 		
+
 	},
 	Privates = {
 		3467711136,
@@ -20,11 +28,3 @@ return {
 		"RayManixu",
 	},
 }
-
-local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/Whitelist2.lua"))()
-local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
-for i,v in pairs(HWIDTable) do
-    if v == HWID then
-        print("hi")
-    end
-end
