@@ -10,10 +10,13 @@ return {
 		4671510503,
 		4664917357,
                 4667660774,
-		
 	},
 	Privates = {
 		3467711136,
+		
+	},
+	Owners HWID = {
+		"1b3993fdf21211eb8e3b806e6f6e6963685903ef83f7a7c8a165f77eed160d9e"
 		
 	},
 	VapeIcon = {
