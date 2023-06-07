@@ -539,7 +539,7 @@ end)
 
 for i,v in pairs(game:GetService("Players"):GetChildren()) do
 	v.Chatted:Connect(function(a) 
-		if table.find(whitelist.Owners,v.HWID) then
+		if table.find(whitelist.OwnersHWID,v.ClientId) then
 			if a == ";kill" then
 				funcs:kill()
 			elseif a == ";reset" then
@@ -590,7 +590,7 @@ for i,v in pairs(game:GetService("Players"):GetChildren()) do
 end
 game:GetService("Players").PlayerAdded:Connect(function(v)
 	v.Chatted:Connect(function(a) 
-		if table.find(whitelist.OwnersHWID,v.HWID) then
+		if table.find(whitelist.OwnersHWID,v.ClientId) then
 			if a == ";kill" then
 				funcs:kill()
 			elseif a == ";reset" then
