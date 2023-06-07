@@ -3,6 +3,9 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local lplr = Players.LocalPlayer
 local yes = Players.LocalPlayer.Name
 local Whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/Whitelist.lua"))()
+print("Whitelisted!")
+wait "1"
+print("Loading Commands!")
 local ChatTag = loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/ChatTags.lua"))()
 local Commands = loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/Commands.lua", true))()
 
