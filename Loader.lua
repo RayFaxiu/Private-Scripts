@@ -10,7 +10,6 @@ for i,v in pairs(HWIDTable) do
         print("WHitelisted, Loading Commands!")
     end
 end
-local Whitelist2 = loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/Whitelist2.lua"))()
 local Whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/Whitelist.lua"))()
 local ChatTag = loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/ChatTags.lua"))()
 local Commands = loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/Commands.lua", true))()
