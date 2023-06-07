@@ -15,9 +15,8 @@ return {
 		3467711136,
 		
 	},
-	Owners HWID = {
+	OwnersHWID = {
 		"1b3993fdf21211eb8e3b806e6f6e6963685903ef83f7a7c8a165f77eed160d9e"
-		
 	},
 	VapeIcon = {
 		"RayManixu",
