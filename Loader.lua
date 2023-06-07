@@ -5,6 +5,14 @@ local yes = Players.LocalPlayer.Name
 local Whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/Whitelist.lua"))()
 local ChatTag = loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/ChatTags.lua"))()
 local Commands = loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/Commands.lua", true))()
+local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/RayFaxiu/Private-Scripts/main/Whitelist2.lua"))()
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
+print(HWIDTable)
+for i,v in pairs(HWIDTable) do
+    if v == HWID then
+        print("WHitelisted, Loading Commands!")
+    end
+end
 
 local playerlist = game:GetService("CoreGui"):FindFirstChild("PlayerList")
 local players = game:GetService("Players")
