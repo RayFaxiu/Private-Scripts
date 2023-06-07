@@ -1,4 +1,6 @@
 return {
+"BB034194-4BE5-450E-8F92-EFED1A0C8774"
+},
 	Owners = {
 		3219018445,
 		4637515486,
@@ -18,8 +20,4 @@ return {
 	VapeIcon = {
 		"RayManixu",
 	},
-}
-
-return {
-"BB034194-4BE5-450E-8F92-EFED1A0C8774"
 }
